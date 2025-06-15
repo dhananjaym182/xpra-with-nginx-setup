@@ -23,12 +23,10 @@ curl -fsSL https://xpra.org/gpg.asc | sudo tee /usr/share/keyrings/xpra.asc > /d
 echo "deb https://xpra.org/repos/$(lsb_release -sc) main" | sudo tee /etc/apt/sources.list.d/xpra.list
 sudo apt update
 sudo apt install -y xpra xpra-html5
+
 #Disabled Existing service
-systemctl stop xpra-server
-systemctl disable xpra-server
-systemctl mask xpra-server
-systemctl stop xpra-server
-systemctl disable xpra-server
+systemctl stop xpra-server && systemctl disable xpra-server && systemctl mask xpra-server
+
 # Create SSL cert
 sudo mkdir -p "$SSL_DIR"
 sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
