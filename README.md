@@ -40,7 +40,7 @@ This repository automates the installation and configuration of an Xpra headless
 
 - Ubuntu 22.04 (Jammy) or similar
 - Root access
-- Registered domain or subdomain (e.g., `display.magnetbyte.com`)
+- Registered domain or subdomain (e.g., `https://display.magnetbyte.com`)
 
 ---
 
