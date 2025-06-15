@@ -17,7 +17,7 @@ This repository automates the installation and configuration of an Xpra headless
 
 - Ubuntu 22.04 (Jammy) or similar
 - Root access
-- Registered domain or subdomain (e.g., `display.example.com`)
+- Registered domain or subdomain (e.g., `display.magnetbyte.com`)
 
 ---
 
@@ -28,5 +28,5 @@ Clone and run the script as root or with sudo:
 ```bash
 git clone https://github.com/yourusername/xpra-headless-server-setup.git
 cd xpra-headless-server-setup
-chmod +x install.sh
-sudo ./install.sh
+chmod +x xpra-install.sh
+sudo ./xpra-install.sh
